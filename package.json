@@ -1,0 +1,27 @@
+{
+  "name": "iot-course-lab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:lab1": "cd lab1 && node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fly3949/iot-course-lab.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fly3949/iot-course-lab/issues"
+  },
+  "homepage": "https://github.com/fly3949/iot-course-lab#readme",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0"
+  }
+}
