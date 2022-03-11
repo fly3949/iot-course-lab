@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:lab1": "cd lab1 && node index.js"
+    "start:lab1": "cd lab1 && node index.js",
+    "start:lab2": "cd lab2 && node index.js"
   },
   "repository": {
     "type": "git",
