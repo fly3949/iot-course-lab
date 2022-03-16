@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:lab1": "cd lab1 && node index.js",
-    "start:lab2": "cd lab2 && node index.js"
+    "start:lab2": "cd lab2 && node index.js",
+    "start:lab3": "cd lab3 && node index.js"
   },
   "repository": {
     "type": "git",
@@ -24,5 +25,13 @@
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.2.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "fs-extra": "^10.0.1",
+    "multer": "^1.4.4",
+    "node-json-db": "^1.5.0"
   }
 }

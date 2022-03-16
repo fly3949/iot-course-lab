@@ -1,0 +1,124 @@
+<%- include('header.html') -%>
+
+<div class="main">
+  <div class="container columns block">
+    <div class="column is-two-thirds">
+      <div class="display-panel block">
+        <div class="profile column is-two-fifths">
+          <% if (avatar) { %>
+            <div class="avatar">
+              <img class="avatar-image" src="<%= avatar %>" />
+            </div>
+          <% } else { %>
+            <div class="avatar" style=""></div>
+          <% }%>
+          <div class="name"><%= name %></div>
+          <div class="apartment"><%= id %></div>
+        </div>
+        <div class="detail column">
+          <div>
+            <span class="label">姓名</span>
+            <span class="value"><%= name %></span>
+          </div>
+          <div>
+            <span class="label">班级</span>
+            <span class="value"><%= classes %></span>
+          </div>
+          <div>
+            <span class="label">学号</span>
+            <span class="value"><%= id %></span>
+          </div>
+          <div>
+            <span class="label">简介</span>
+            <span class="value"><%= desc %></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form column">
+      <div class="config-panel block">
+        <form action="/" method="post" enctype="multipart/form-data">
+          <div class="field is-horizontal">
+            <div class="field-label is-normal">
+              <label class="label">学号</label>
+            </div>
+            <div class="control">
+              <input
+                required
+                class="input"
+                name="id"
+                type="text"
+                placeholder="请输入学号"
+                value="<%= id %>"
+              />
+            </div>
+          </div>
+          <div class="field is-horizontal">
+            <div class="field-label is-normal">
+              <label class="label">姓名</label>
+            </div>
+            <div class="control">
+              <input
+                class="input"
+                name="name"
+                type="text"
+                placeholder="请输入姓名"
+                value="<%= name %>"
+              />
+            </div>
+          </div>
+          <div class="field is-horizontal">
+            <div class="field-label is-normal">
+              <label class="label">班级</label>
+            </div>
+            <div class="control">
+              <input
+                class="input"
+                name="classes"
+                type="text"
+                placeholder="请输入班级"
+                value="<%= classes %>"
+              />
+            </div>
+          </div>
+          <div class="field is-horizontal">
+            <div class="field-label">
+              <label class="label">照片</label>
+            </div>
+            <div class="field-body">
+              <div class="field is-narrow">
+                <div class="control">
+                  <input type="file" name="file" style="display: block; max-width: 200px;" accept="image/*" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="field is-horizontal">
+            <div class="field-label is-normal">
+              <label class="label">简介</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <div class="control">
+                  <textarea class="textarea" name="desc" placeholder="请输入自我介绍"><%= desc %></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="field is-horizontal mt-3">
+            <div class="field-body is-justify-content-center">
+              <div class="control">
+                <button type="submit" class="button is-success">提交</button>
+                <button type="submit" formaction="query" class="button is-info">
+                  查询
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include('footer.html') -%>
