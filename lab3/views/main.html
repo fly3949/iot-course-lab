@@ -50,6 +50,7 @@
                 type="text"
                 placeholder="请输入学号"
                 value="<%= id %>"
+                id="uid-input"
               />
             </div>
           </div>
@@ -109,7 +110,7 @@
             <div class="field-body is-justify-content-center">
               <div class="control">
                 <button type="submit" class="button is-success">提交</button>
-                <button type="submit" formaction="query" class="button is-info">
+                <button type="button" id="query" class="button is-info">
                   查询
                 </button>
               </div>
@@ -120,5 +121,14 @@
     </div>
   </div>
 </div>
+
+<script>
+  const queryBtn = document.querySelector('#query');
+  const uidInput = document.querySelector('#uid-input')
+  queryBtn.addEventListener('click', () => {
+    const uid = uidInput.value
+    window.location.href = `/${uid}.html`
+  })
+</script>
 
 <%- include('footer.html') -%>
