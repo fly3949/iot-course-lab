@@ -1,0 +1,113 @@
+.main {
+  background-color: #f3faff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,微软雅黑,Arial,sans-serif;
+}
+
+.columns {
+  height: 100%;
+}
+
+.block {
+  box-shadow: 0 0 13px 0 rgb(82 63 105 / 10%);
+  background: #fff;
+  border-radius: 4px;
+}
+
+.container {
+  width: 1380px;
+  box-sizing: border-box;
+  padding: 50px;
+}
+
+.display-panel {
+  height: 450px;
+  overflow: hidden;
+  position: relative;
+  background: #fff;
+  display: flex;
+}
+
+.config-panel {
+  box-sizing: border-box;
+  height: 450px;
+  padding: 40px 20px 20px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile {
+  width: 40%;
+  height: 100%;
+  background-color: #395aae;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #eeefff;
+}
+
+.profile .avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  overflow: hidden;
+  position: relative;
+}
+
+.avatar-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile .name {
+  font-size: 24px;
+  padding-top: 10px;
+  font-weight: 400;
+}
+
+.profile .apartment {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.detail {
+  background: #fff;
+  padding: 20px 20px 20px 50px;
+  width: 490px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 2.5;
+  font-weight: 300;
+}
+
+.detail .label {
+  padding-right: 15px;
+  font-weight: 400;
+  color: #555;
+  width: 66px;
+  text-align: justify;
+  display: inline-block;
+  text-align-last: justify;
+  position: relative;
+}
+
+.detail .label::after {
+  content: "：";
+  position: absolute;
+  right: 0;
+}

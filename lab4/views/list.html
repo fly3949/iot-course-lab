@@ -1,0 +1,48 @@
+<%- include('header.html') -%>
+
+<div class="main">
+  <div class="container block is-flex is-flex-direction-column">
+    <% if (successText) { %>
+    <div class="notification is-success"><%= successText %></div>
+    <% }%>
+    <div class="buttons">
+      <a href="/add">
+        <button class="button is-primary">添加新用户</button>
+      </a>
+    </div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>学号</th>
+          <th>姓名</th>
+          <th>班级</th>
+          <th>操作</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% list.forEach(function(item){ %>
+        <tr>
+          <th><%= item.id %></th>
+          <td><%= item.name %></td>
+          <td><%= item.classes %></td>
+          <td>
+            <div class="buttons">
+              <form action="/delete" method="post">
+                <input type="hidden" name="id" value="<%= item.id %>" />
+                <a href="/edit?id=<%= item.id %>">
+                  <button type="button" class="button is-small is-link">编辑</button>
+                </a>
+                <button type="submit" class="button is-small is-danger">
+                  删除
+                </button>
+              </form>
+            </div>
+          </td>
+        </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<%- include('footer.html') -%>
