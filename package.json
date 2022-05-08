@@ -8,7 +8,9 @@
     "start:lab1": "cd lab1 && nodemon index.js",
     "start:lab2": "cd lab2 && nodemon index.js",
     "start:lab3": "cd lab3 && nodemon index.js",
-    "start:lab4": "cd lab4 && nodemon index.js"
+    "start:lab4": "cd lab4 && nodemon index.js",
+    "start:lab5-frontend": "cd lab5/frontend && npm run serve",
+    "start:lab5-backend": "cd lab5/backend && nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -25,7 +27,9 @@
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^5.2.0"
+    "eslint-plugin-promise": "^5.2.0",
+    "eslint-plugin-vue": "^8.7.1",
+    "nodemon": "^2.0.16"
   },
   "dependencies": {
     "body-parser": "^1.19.2",
@@ -33,6 +37,7 @@
     "express": "^4.17.3",
     "fs-extra": "^10.0.1",
     "mongodb": "^4.4.1",
+    "mongoose": "^6.3.2",
     "multer": "^1.4.4",
     "node-json-db": "^1.5.0"
   }
