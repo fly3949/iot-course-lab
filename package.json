@@ -10,7 +10,9 @@
     "start:lab3": "cd lab3 && nodemon index.js",
     "start:lab4": "cd lab4 && nodemon index.js",
     "start:lab5-frontend": "cd lab5/frontend && npm run serve",
-    "start:lab5-backend": "cd lab5/backend && nodemon index.js"
+    "start:lab5-backend": "cd lab5/backend && nodemon index.js",
+    "start:lab6-frontend": "cd lab6/frontend && npm run serve",
+    "start:lab6-backend": "cd lab6/backend && nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +25,7 @@
   },
   "homepage": "https://github.com/fly3949/iot-course-lab#readme",
   "devDependencies": {
+    "babel-eslint": "^10.1.0",
     "eslint": "^7.32.0",
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.25.4",
