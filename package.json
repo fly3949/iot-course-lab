@@ -12,7 +12,8 @@
     "start:lab5-frontend": "cd lab5/frontend && npm run serve",
     "start:lab5-backend": "cd lab5/backend && nodemon index.js",
     "start:lab6-frontend": "cd lab6/frontend && npm run serve",
-    "start:lab6-backend": "cd lab6/backend && nodemon index.js"
+    "start:lab6-backend": "cd lab6/backend && nodemon index.js",
+    "start:lab7-frontend": "cd lab7/frontend && npm run serve"
   },
   "repository": {
     "type": "git",
