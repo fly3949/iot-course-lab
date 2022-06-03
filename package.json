@@ -27,6 +27,9 @@
   "homepage": "https://github.com/fly3949/iot-course-lab#readme",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
+    "cross-env": "^7.0.3",
+    "electron": "^19.0.3",
+    "electron-builder": "^23.0.3",
     "eslint": "^7.32.0",
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.25.4",
